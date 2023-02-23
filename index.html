@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+    <meta http-equiv="refresh" content="30">
+    <meta name="keywords" content="HTML,CSS,JAVASCRIPT">
+    <title>form</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    
+</head>
+<body>
+    <form action="/action_page.php" method="get">
+        <fieldset>
+            <legend>Personal Data</legend>
+
+        <label for="fname">First Name</label><br>
+        <input type="text" id="fname" name="fname" value="john"><br>
+
+
+        <label for="lname">Last Name</label><br>
+        <input type="text" id="lname" name="lname"><br>
+    
+        <input type="radio" id="html" Name="fav_ Language" value="Html">
+        <label for="html">Html</label>
+        <br>
+
+        <input type="radio" id="css" name="fav_Language" value="css">
+        <label for="css">CSS</label><br><br>
+
+
+        <input type="checkbox" id="vehicle1" name="Vehicle1" checked> 
+        <label for="vehicle1">bike</label><br><br>
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" value="harsh" name="fname"><br><br>
+        <input type="submit">submit<br><br>
+         
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars">
+            <option value="Volvo">Volvo</option>
+            <option value="Benz" selected>Benz</option>
+            <option value="BMW">BMW</option>
+        </select><br><br>
+
+        <label for="years">Years of Experience?</label>
+        <input id="years" type="number" name="years" step="1"><br>
+
+
+        <p>Range</p>
+        <label for="range">Volume Control</label>
+        <input id="range" type="range" name="volume" min="0" max="100" step="1"><br>
+
+        <label for="cities">Cities to visit</label>
+        <input list="cities" name="city" type="text">
+        <datalist id="cities">
+            <option value="Ny"></option>
+            <option value="BC"></option>
+            <option value="An"></option>
+        </datalist><br><br>
+        
+
+        <label for="blog">blog post:</label><br>
+        <textarea id="blog" name="blog" rows="5" columns="30">
+        </textarea><br>
+
+        <label for="bro">Bro Code:</label><br>
+        <textarea id="bro" name="bro" rows="6" columns="35"></textarea><br>
+
+
+        <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+        <button type="button" onclick="alert('harsh')">Touch me</button>
+        <br>
+
+        <label for="datemax" >Enter a date before 1980-01-01</label>
+        <input type="date" id="datemax" name="datemax" max="1979-12-31"><br>
+
+        <label for="datemin">Enter a date after 2023-01-01</label>
+        <input type="date" id="datemin" name="datemin" min="2023-01-02"><br>
+
+        <label for="birthdaytime">Birthay(date and time):</label>
+        <input type="datetime-local" id="birthdaytime" name="birthdaytime" required><br><br>
+
+        <label for="email">Enter your mail:</label>
+        <input type="email" name="email" id="email"><br><br>
+
+        <label for="myfile">select a file:</label>
+        <input type="file" name="file" id="myfile"> 
+
+        <input type="hidden" id="custId" name="custId" value="3487">
+
+
+        <br>
+        <label for="bdaymonth">Birthday (month and year):</label>
+        <input type="month" id="bdaymonth" name="bdaymonth">
+        <br><br>
+        <label for="quantity">quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="0" max="100" step="10" value="30">
+        
+        <br><br>
+        <label for="gsearch">Search Google</label>
+        <input type="search" id="gsearch" name="gsearch">
+        <input type="submit" value="Submit" autofocus> 
+
+        <br><br>
+        <label for="phone">Enter your phone number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" max="0" placeholder="123-45-678">
+
+        <label for="phone">Enter your phone numner:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="123-45-678">
+        <br>
+        <label for="appt">Select a time:</label>
+        <input type="time" id="appt" name="appt">
+        <br><br>
+
+        <label for="homepage">Add Your homepage:</label>
+        <input type="url" id="homepage" name="homepage" autocomplete="off">
+        
+        <br><br>
+        <label for="week">Select a week:</label>
+        <input type="week" name="week" id="week">
+        <br><br>
+
+        <label for="file">Select a file:</label>
+        <input type="file" id="file" name="file" multiple>
+
+        <br><br>
+        <input type="submit" formaction="/action_page2.php" value="submit as an admin">
+        <input type="submit" formmethod="post" value="submit using post">
+
+
+        
+
+
+        </fieldset>
+
+
+
+
+        
+   
+   
+   
+   
+    </form>
+
+
+
+
+
+</body>
